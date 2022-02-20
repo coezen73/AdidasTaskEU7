@@ -36,6 +36,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
+                //    driverPool.get().manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
